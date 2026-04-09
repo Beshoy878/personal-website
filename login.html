@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up | English Academy</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .auth-container {
+            display: flex;
+            min-height: 100vh;
+            background-color: var(--secondary-color);
+        }
+        
+        .auth-image {
+            flex: 1;
+            background: linear-gradient(135deg, rgba(128, 0, 32, 0.9) 0%, rgba(163, 26, 63, 0.9) 100%), url('assets/hero_image.png') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            padding: 3rem;
+            text-align: center;
+        }
+
+        .auth-image h2 {
+            color: var(--white);
+            margin-bottom: 1rem;
+            font-size: 3rem;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .auth-image p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .auth-form-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background-color: var(--white);
+        }
+
+        .auth-form-wrapper {
+            width: 100%;
+            max-width: 450px;
+        }
+
+        .auth-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-decoration: none;
+        }
+
+        .auth-tabs {
+            display: flex;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .auth-tab {
+            flex: 1;
+            text-align: center;
+            padding: 1rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .auth-tab.active {
+            color: var(--primary-color);
+        }
+
+        .auth-tab.active::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .auth-form {
+            display: none;
+        }
+        
+        .auth-form.active {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .form-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .form-options a {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .auth-social {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .auth-social p {
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .auth-social p::before, .auth-social p::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 30%;
+            height: 1px;
+            background-color: var(--border-color);
+        }
+
+        .auth-social p::before { left: 0; }
+        .auth-social p::after { right: 0; }
+
+        .social-btns {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn-social {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.8rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius);
+            background-color: var(--white);
+            color: var(--text-main);
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-social:hover {
+            background-color: var(--secondary-color);
+        }
+
+        .btn-social img {
+            width: 20px;
+        }
+
+        .back-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: var(--primary-color);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Mobile specific styles */
+        @media (max-width: 768px) {
+            .auth-container {
+                flex-direction: column;
+            }
+            .auth-image {
+                display: none; /* Hide image on mobile to save space */
+            }
+            .auth-form-container {
+                min-height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="auth-container">
+        
+        <div class="auth-image">
+            <div>
+                <h2>Welcome Back! <br>أهلاً بك!</h2>
+                <p>Unlock endless opportunities by mastering the English language with our expert instructors and interactive courses.</p>
+            </div>
+        </div>
+
+        <div class="auth-form-container">
+            <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Home</a>
+            
+            <div class="auth-form-wrapper">
+                <a href="index.html" class="auth-logo">
+                    <div class="logo-icon">E</div>
+                    English Academy
+                </a>
+
+                <div class="auth-tabs">
+                    <div class="auth-tab active" id="tab-login" onclick="switchTab('login')">Login</div>
+                    <div class="auth-tab" id="tab-signup" onclick="switchTab('signup')">Sign Up</div>
+                </div>
+
+                <!-- Login Form -->
+                <form class="auth-form active" id="form-login">
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <div class="form-options">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                    
+                    <div class="auth-social">
+                        <p>Or continue with</p>
+                        <div class="social-btns">
+                            <button type="button" class="btn-social" onclick="simulateSocialLogin('Google')">
+                                <i class="fab fa-google" style="color: #DB4437;"></i> Google
+                            </button>
+                            <button type="button" class="btn-social" onclick="simulateSocialLogin('Facebook')">
+                                <i class="fab fa-facebook" style="color: #4267B2;"></i> Facebook
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Sign Up Form -->
+                <form class="auth-form" id="form-signup">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Confirm Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchTab(tab) {
+            // Update tabs
+            document.getElementById('tab-login').classList.remove('active');
+            document.getElementById('tab-signup').classList.remove('active');
+            document.getElementById(`tab-${tab}`).classList.add('active');
+
+            // Update forms
+            document.getElementById('form-login').classList.remove('active');
+            document.getElementById('form-signup').classList.remove('active');
+            document.getElementById(`form-${tab}`).classList.add('active');
+        }
+
+        // Just prevent form submissions for demonstration
+        document.getElementById('form-login').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Login successful! Redirecting to dashboard...');
+        });
+
+        document.getElementById('form-signup').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Account created successfully! Welcome to English Academy.');
+        });
+
+        function simulateSocialLogin(provider) {
+            const btn = event.currentTarget;
+            const originalText = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Connecting...';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                alert(`Successfully authenticated with ${provider}! Redirecting to dashboard...`);
+                btn.innerHTML = originalText;
+                btn.disabled = false;
+            }, 1500);
+        }
+    </script>
+</body>
+</html>
