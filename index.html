@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beshoy Atef | High-End Portfolio</title>
+    <meta name="description" content="Professional portfolio of Beshoy Atef, Front-End Developer and Web Designer.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Prism CSS for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#" class="logo">BA.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="home" id="home">
+        <div class="home-left" data-aos="fade-right" data-aos-duration="1000">
+            <div class="img-box">
+                <!-- Portrait Image -->
+                <img src="assets/img/beshoy-hero-dark.png" alt="Beshoy Atef Portrait">
+            </div>
+            <div class="glow-effect"></div>
+        </div>
+        
+        <div class="home-right code-container" data-aos="fade-left" data-aos-duration="1000">
+            <div class="editor-header">
+                <div class="mac-btns">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="file-name">portfolio.html</div>
+            </div>
+            <div class="editor-body">
+                <div class="line-numbers" id="line-numbers"></div>
+                <div class="code-wrapper" id="code-wrapper">
+                    <pre><code id="typed-code" class="language-html"></code><span class="typing-cursor"></span></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="assets/img/about-ai.jpg" alt="About Image">
+        </div>
+        
+        <div class="about-content" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>A Creative Developer Passionate About User Experiences</h3>
+            <p>I specialize in front-end development and web design. With a strong foundation in modern web technologies and programming languages like C++ and Python, I bring creative visions to life. I craft everything from engaging landing pages to full restaurant and business websites, alongside professional CV designs.</p>
+            
+            <div class="skills-container">
+                <div class="skill-box">
+                    <span class="title">HTML/CSS</span>
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">95%</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="title">JavaScript/React</span>
+                    <div class="skill-bar">
+                        <span class="skill-per js">
+                            <span class="tooltip">90%</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="title">UI/UX Design</span>
+                    <div class="skill-bar">
+                        <span class="skill-per ui">
+                            <span class="tooltip">85%</span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="title">C++ & Python</span>
+                    <div class="skill-bar">
+                        <span class="skill-per backend">
+                            <span class="tooltip">80%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading" data-aos="fade-down" data-aos-duration="1000">My <span>Services</span></h2>
+        
+        <div class="services-container">
+            <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+                <i class='bx bx-code-alt'></i>
+                <h3>Front-End Development</h3>
+                <p>Building responsive, fast, and scalable business websites, restaurant websites, and interactive landing pages.</p>
+            </div>
+            
+            <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+                <i class='bx bx-palette'></i>
+                <h3>Web Design</h3>
+                <p>Creating intuitive, modern, and engaging user interfaces that provide exceptional user experiences.</p>
+            </div>
+            
+            <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+                <i class='bx bxs-file-blank'></i>
+                <h3>CV & Portfolios</h3>
+                <p>Designing elegant professional profiles, customized CVs, and personal branding assets that stand out.</p>
+            </div>
+            
+            <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+                <i class='bx bx-terminal'></i>
+                <h3>Software Programming</h3>
+                <p>Leveraging knowledge in Python and C++ for robust problem-solving, algorithms, and logic building.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading" data-aos="fade-down" data-aos-duration="1000">My <span>Projects</span></h2>
+        
+        <div class="portfolio-container" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+            <div class="portfolio-box" data-aos="zoom-in" data-aos-delay="100">
+                <img src="assets/img/english.png" alt="English Academy" onerror="this.src='https://images.unsplash.com/photo-1546410531-df4cb71576ac?auto=format&fit=crop&w=800&q=80'">
+                <div class="portfolio-layer">
+                    <h4>English Academy</h4>
+                    <p>A comprehensive learning platform for English language students.</p>
+                    <a href="../english-learning/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" data-aos="zoom-in" data-aos-delay="200">
+                <img src="assets/img/fintrack.png" alt="FinTrack" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                <div class="portfolio-layer">
+                    <h4>FinTrack App</h4>
+                    <p>An intuitive expense tracker and budgeting web application.</p>
+                    <a href="../expense-tracker/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box" data-aos="zoom-in" data-aos-delay="300">
+                <img src="assets/img/newton.png" alt="Newton Platform">
+                <div class="portfolio-layer">
+                    <h4>Newton Educational Platform</h4>
+                    <p>A professional platform for mathematics learning and tutoring.</p>
+                    <a href="../website%20education/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading" data-aos="fade-down" data-aos-duration="1000">Contact <span>Me!</span></h2>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                <h3>Let's work together</h3>
+                <p>Have a project in mind or looking for a premium web solution? I am currently available for freelance work.</p>
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <span>beshoyatef3u9878@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <span>+20 128 131 9670</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-map'></i>
+                        <span>Minya, Egypt</span>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/201281319670" target="_blank" class="btn whatsapp-btn">
+                    <i class='bx bxl-whatsapp'></i> Chat on WhatsApp
+                </a>
+            </div>
+
+            <form action="#" data-aos="fade-left" data-aos-duration="1000">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="text" placeholder="Email Subject" required>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Designed by Beshoy Atef</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
