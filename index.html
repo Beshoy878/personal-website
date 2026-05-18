@@ -1,250 +1,239 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أ. محمد علي - مدرس الرياضيات</title>
-    <meta name="description" content="منصة تفاعلية لشرح الرياضيات مبسطة وممتعة للمرحلة الثانوية">
-    <!-- Google Fonts: Cairo -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Beshoy Atef | High-End Portfolio</title>
+    <meta name="description" content="Professional portfolio of Beshoy Atef, Front-End Developer and Web Designer.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Prism CSS for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <div class="container navbar">
-            <div class="logo">منصة نيوتن - أ. محمد علي</div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#home">الرئيسية</a></li>
-                    <li><a href="#about">عن المعلم</a></li>
-                    <li><a href="#branches">فروع المادة</a></li>
-                    <li><a href="#features">المميزات</a></li>
-                    <li><a href="#schedule">المواعيد</a></li>
-                    <li><a href="#booking">التسجيل</a></li>
-                </ul>
-            </nav>
-            <a href="#booking" class="whatsapp-icon-nav" aria-label="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>
+    <!-- Navbar -->
+    <header class="header">
+        <a href="#" class="logo">BA.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <h1>أ. محمد علي</h1>
-            <div class="subject">خبير مادة الرياضيات</div>
-            <p>أفضل شرح وأقوى مراجعات.. طريقك للتفوق والدرجة النهائية</p>
-            <a href="#booking" class="btn btn-primary">احجز الآن <i class="fas fa-arrow-left" style="margin-right: 8px;"></i></a>
-        </div>
-    </section>
-
-    <!-- Why Newton Section (Hook) -->
-    <section id="why-newton" style="background-color: var(--secondary-color); color: #fff; position: relative; overflow: hidden; padding: 60px 0; border-top: 5px solid var(--accent-color);">
-        <div class="container" style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 40px;">
-            <div style="flex: 1; min-width: 300px; z-index: 2;">
-                <h2 style="font-size: 3.5rem; color: var(--accent-color); margin-bottom: 20px; font-weight: 800; font-family: 'Cairo', sans-serif;">ليه منصة نيوتن ؟ <i class="fas fa-question" style="color: var(--text-light); font-size: 2.5rem; opacity: 0.8; transform: rotate(15deg);"></i></h2>
-                <p style="font-size: 1.4rem; line-height: 1.8; margin-bottom: 30px; color: #f5f7fa;">لأن طلبة كتير بتواجه صعوبة في فهم الرياضيات والمسائل المعقدة، وفرنالك في منصة نيوتن كل اللي نفسك فيه عشان نخليلك المادة <strong>بسيطة وممتعة</strong> وتضمن أقوى مراجعة للامتحانات!</p>
-                <a href="#booking" class="btn btn-primary" style="font-size: 1.3rem; padding: 15px 45px; background-color: var(--accent-color); color: #111;">اشترك الآن</a>
+    <section class="home" id="home">
+        <div class="home-left" data-aos="fade-right" data-aos-duration="1000">
+            <div class="img-box">
+                <!-- Portrait Image -->
+                <img src="images/beshoy-hero-dark.png" alt="Beshoy Atef Portrait">
             </div>
-            <div style="flex: 1; min-width: 300px; text-align: center; position: relative; z-index: 1;">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg" alt="Isaac Newton" style="max-height: 400px; border-radius: 15px; box-shadow: 0 20px 40px rgba(0,0,0,0.5); object-fit: cover; border: 5px solid rgba(255, 255, 255, 0.1); transform: rotate(2deg); transition: transform 0.3s ease;" onmouseover="this.style.transform='rotate(0deg) scale(1.03)'" onmouseout="this.style.transform='rotate(2deg)'">
+            <div class="glow-effect"></div>
+        </div>
+        
+        <div class="home-right code-container" data-aos="fade-left" data-aos-duration="1000">
+            <div class="editor-header">
+                <div class="mac-btns">
+                    <span></span><span></span><span></span>
+                </div>
+                <div class="file-name">portfolio.html</div>
+            </div>
+            <div class="editor-body">
+                <div class="line-numbers" id="line-numbers"></div>
+                <div class="code-wrapper" id="code-wrapper">
+                    <pre><code id="typed-code" class="language-html"></code><span class="typing-cursor"></span></pre>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">نبذة عن المعلم</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>أستاذ محمد علي، معلم خبير في مادة الرياضيات للمرحلة الثانوية، يتميز بأسلوب سلس ومبسط يضمن الفهم العميق للمادة بعيداً عن الحفظ التلقيني وبأسلوب مستوحى من عبقرية نيوتن.</p>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> أكثر من ١٥ عاماً من الخبرة في التدريس</li>
-                        <li><i class="fas fa-check-circle"></i> مؤلف سلاسل تبسيط الرياضيات</li>
-                        <li><i class="fas fa-check-circle"></i> مئات الطلاب الأوائل على مستوى الجمهورية</li>
-                        <li><i class="fas fa-check-circle"></i> استخدام أحدث طرق التدريس التفاعلية</li>
-                    </ul>
-                </div>
-                <!-- Action / Placeholder Image -->
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="صورة المعلم" class="teacher-photo" style="box-shadow: 0 15px 35px rgba(128, 0, 32, 0.2); border: 5px solid #fff;">
-                </div>
-            </div>
+    <section class="about" id="about">
+        <div class="about-img" data-aos="zoom-in" data-aos-duration="1000">
+            <img src="images/about-ai.jpg" alt="About Image">
         </div>
-    </section>
-
-    <!-- Branches Section -->
-    <section id="branches" class="branches">
-        <div class="container">
-            <h2 class="section-title">فروع الرياضيات</h2>
-            <div class="branches-container">
-                <div class="branches-tabs">
-                    <button class="tab-btn active" onclick="openBranch(event, 'algebra')">الجبر</button>
-                    <button class="tab-btn" onclick="openBranch(event, 'calculus')">التفاضل والتكامل</button>
-                    <button class="tab-btn" onclick="openBranch(event, 'geometry')">الهندسة التحليلية والفراغية</button>
-                    <button class="tab-btn" onclick="openBranch(event, 'trigonometry')">حساب المثلثات</button>
-                    <button class="tab-btn" onclick="openBranch(event, 'statistics')">الإحصاء</button>
+        
+        <div class="about-content" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>A Creative Developer Passionate About User Experiences</h3>
+            <p>I specialize in front-end development and web design. With a strong foundation in modern web technologies and programming languages like C++ and Python, I bring creative visions to life. I craft everything from engaging landing pages to full restaurant and business websites, alongside professional CV designs.</p>
+            
+            <div class="skills-container">
+                <div class="skill-box">
+                    <span class="title">HTML/CSS</span>
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">95%</span>
+                        </span>
+                    </div>
                 </div>
-                <div class="branches-content">
-                    <div id="algebra" class="branch-panel active">
-                        <h3>الجبر</h3>
-                        <p>تأسيس قوي في المعادلات، المصفوفات، والمحددات، وكيفية حل الأنظمة الجبرية المعقدة بأساليب مبسطة تضمن لك الدرجة النهائية.</p>
-                        <i class="fas fa-subscript branch-icon"></i>
+                
+                <div class="skill-box">
+                    <span class="title">JavaScript/React</span>
+                    <div class="skill-bar">
+                        <span class="skill-per js">
+                            <span class="tooltip">90%</span>
+                        </span>
                     </div>
-                    <div id="calculus" class="branch-panel">
-                        <h3>التفاضل والتكامل</h3>
-                        <p>فهم عميق للنهايات والاشتقاق والتكامل وتطبيقاتها الهندسية والفيزيائية بدون حفظ قوانين معقدة، بل بالفهم والاستيعاب.</p>
-                        <i class="fas fa-infinity branch-icon"></i>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="title">UI/UX Design</span>
+                    <div class="skill-bar">
+                        <span class="skill-per ui">
+                            <span class="tooltip">85%</span>
+                        </span>
                     </div>
-                    <div id="geometry" class="branch-panel">
-                        <h3>الهندسة التحليلية والفراغية</h3>
-                        <p>تخيل الأشكال ثلاثية الأبعاد، دراسة المتجهات، الخطوط المستقيمة، والمستويات في الفراغ وتطبيقها بأسلوب هندسي دقيق.</p>
-                        <i class="fas fa-cube branch-icon"></i>
-                    </div>
-                    <div id="trigonometry" class="branch-panel">
-                        <h3>حساب المثلثات</h3>
-                        <p>إتقان الدوال المثلثية وقوانينها، وتمثيلها بيانياً واستخدامها في حل المثلث في جميع الحالات وبطرق مبتكرة.</p>
-                        <i class="fas fa-draw-polygon branch-icon"></i>
-                    </div>
-                    <div id="statistics" class="branch-panel">
-                        <h3>الإحصاء والاحتمالات</h3>
-                        <p>دراسة التوزيعات الطبيعية، مقاييس النزعة المركزية والتشتت، ونظريات الاحتمالات وصولاً لتوقع النتائج وتحليل البيانات بدقة.</p>
-                        <i class="fas fa-chart-line branch-icon"></i>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="title">C++ & Python</span>
+                    <div class="skill-bar">
+                        <span class="skill-per backend">
+                            <span class="tooltip">80%</span>
+                        </span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">لماذا تختارنا؟</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-chalkboard-teacher feature-icon"></i>
-                    <h3>شرح مبسط</h3>
-                    <p>تبسيط المعقد وتحويل القوانين الصعبة إلى أفكار سهلة الاستيعاب لجميع مستويات الطلاب.</p>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading" data-aos="fade-down" data-aos-duration="1000">My <span>Services</span></h2>
+        
+        <div class="services-container">
+            <div class="service-box" data-aos="fade-up" data-aos-delay="100">
+                <i class='bx bx-code-alt'></i>
+                <h3>Front-End Development</h3>
+                <p>Building responsive, fast, and scalable business websites, restaurant websites, and interactive landing pages.</p>
+            </div>
+            
+            <div class="service-box" data-aos="fade-up" data-aos-delay="200">
+                <i class='bx bx-palette'></i>
+                <h3>Web Design</h3>
+                <p>Creating intuitive, modern, and engaging user interfaces that provide exceptional user experiences.</p>
+            </div>
+            
+            <div class="service-box" data-aos="fade-up" data-aos-delay="300">
+                <i class='bx bxs-file-blank'></i>
+                <h3>CV & Portfolios</h3>
+                <p>Designing elegant professional profiles, customized CVs, and personal branding assets that stand out.</p>
+            </div>
+            
+            <div class="service-box" data-aos="fade-up" data-aos-delay="400">
+                <i class='bx bx-terminal'></i>
+                <h3>Software Programming</h3>
+                <p>Leveraging knowledge in Python and C++ for robust problem-solving, algorithms, and logic building.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading" data-aos="fade-down" data-aos-duration="1000">My <span>Projects</span></h2>
+        
+        <div class="portfolio-container" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+            <div class="portfolio-box" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/english.png" alt="English Academy" onerror="this.src='https://images.unsplash.com/photo-1546410531-df4cb71576ac?auto=format&fit=crop&w=800&q=80'">
+                <div class="portfolio-layer">
+                    <h4>English Academy</h4>
+                    <p>A comprehensive learning platform for English language students.</p>
+                    <a href="../english-learning/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
-                <div class="feature-card">
-                    <i class="fas fa-book-open feature-icon"></i>
-                    <h3>مراجعات نهائية</h3>
-                    <p>خطط مراجعة مكثفة تغطي المنهج بالكامل مع التركيز على نقاط الضعف والأسئلة المتوقعة.</p>
+            </div>
+
+            <div class="portfolio-box" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/fintrack.png" alt="FinTrack" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'">
+                <div class="portfolio-layer">
+                    <h4>FinTrack App</h4>
+                    <p>An intuitive expense tracker and budgeting web application.</p>
+                    <a href="../expense-tracker/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
-                <div class="feature-card">
-                    <i class="fas fa-pencil-alt feature-icon"></i>
-                    <h3>حل امتحانات</h3>
-                    <p>تدريب مستمر على كافة أنماط الأسئلة ونماذج امتحانات الوزارة والسنوات السابقة.</p>
+            </div>
+
+            <div class="portfolio-box" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/newton.png" alt="Newton Platform">
+                <div class="portfolio-layer">
+                    <h4>Newton Educational Platform</h4>
+                    <p>A professional platform for mathematics learning and tutoring.</p>
+                    <a href="../website%20education/index.html" target="_blank"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Schedule Section -->
-    <section id="schedule" class="schedule">
-        <div class="container">
-            <h2 class="section-title">جدول المواعيد</h2>
-            <div class="schedule-table-wrap">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>الصف الدراسي</th>
-                            <th>الأيام</th>
-                            <th>الساعة</th>
-                            <th>المكان / السنتر</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>الصف الأول الثانوي</td>
-                            <td>الأحد والأربعاء</td>
-                            <td>٤:٠٠ عصراً</td>
-                            <td>سنتر التفوق (متفرع من ش. النيل)</td>
-                        </tr>
-                        <tr>
-                            <td>الصف الثاني الثانوي</td>
-                            <td>الإثنين والخميس</td>
-                            <td>٥:٣٠ مساءً</td>
-                            <td>سنتر المستقبل (بجوار المحطة)</td>
-                        </tr>
-                        <tr>
-                            <td>الصف الثالث الثانوي</td>
-                            <td>السبت والثلاثاء</td>
-                            <td>٣:٠٠ عصراً</td>
-                            <td>سنتر الأوائل (الفرع الرئيسي)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </section>
 
 
-    <!-- Booking Section -->
-    <section id="booking" class="booking">
-        <div class="container">
-            <div class="booking-box">
-                <h3>ابدأ رحلة التفوق الآن!</h3>
-                <p>للحجز والاستفسار عن المواعيد والأسعار، تواصل معنا مباشرة عبر الواتساب.</p>
-                <a href="https://wa.me/201000000000" target="_blank" class="whatsapp-btn">
-                    <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading" data-aos="fade-down" data-aos-duration="1000">Contact <span>Me!</span></h2>
+        
+        <div class="contact-wrapper">
+            <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                <h3>Let's work together</h3>
+                <p>Have a project in mind or looking for a premium web solution? I am currently available for freelance work.</p>
+                <div class="contact-list">
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <span>beshoyatef3u9878@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <span>+20 128 131 9670</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-map'></i>
+                        <span>Minya, Egypt</span>
+                    </div>
+                </div>
+                
+                <a href="https://wa.me/201281319670" target="_blank" class="btn whatsapp-btn">
+                    <i class='bx bxl-whatsapp'></i> Chat on WhatsApp
                 </a>
-                <p style="margin-top: 20px; color: #777;">أو اتصل على: 01000000000+</p>
             </div>
+
+            <form action="#" data-aos="fade-left" data-aos-duration="1000">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number" required>
+                    <input type="text" placeholder="Email Subject" required>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>
-                    <h3>أ. محمد علي - منصة نيوتن</h3>
-                    <p style="margin-top: 10px; opacity: 0.8;">خبير الرياضيات للمرحلة الثانوية</p>
-                </div>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-telegram-plane"></i></a>
-                </div>
-            </div>
-            <div class="copyright">
-                &copy; 2026 جميع الحقوق محفوظة | تم تصميم وتطوير الموقع بواسطة <span style="font-weight: 800; color: var(--accent-color);">بيشوي عاطف</span>
-            </div>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Designed by Beshoy Atef</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
 
-    <script>
-        // Interactive Tabs Logic
-        function openBranch(evt, branchName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("branch-panel");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].classList.remove("active");
-            }
-            tablinks = document.getElementsByClassName("tab-btn");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].classList.remove("active");
-            }
-            document.getElementById(branchName).classList.add("active");
-            evt.currentTarget.classList.add("active");
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <!-- Prism.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
 </body>
 </html>
